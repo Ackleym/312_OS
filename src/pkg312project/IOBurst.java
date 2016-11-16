@@ -8,6 +8,10 @@ package pkg312project;
  * @author Najia13
  */
 public class IOBurst {
-    public void generateIOBurst(){}
+
+    public void generateIOBurst()
+    {
+
+    }
     
 }

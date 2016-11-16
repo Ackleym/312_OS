@@ -12,8 +12,16 @@ package pkg312project;
  *
  * @author Najia13
  */
-public class Clock {
-    
+public class Clock
+{
+    public void execute()
+    {
 
-    
+    }
+
+    public void getClock()
+    {
+
+    }
+
 }

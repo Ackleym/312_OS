@@ -9,30 +9,24 @@ package pkg312project;
  *
  * @author Najia13
  */
-public class CPU {
-    
-    
-    //♥♥♥♥ Simulates a CPU clock ♥♥♥♥♥ 
+public class CPU
+    {
+        public void advanceClock()
+        {
+//            cycle++;
+        }
 
-    public class Clock{
-        public void execute(){}
-        public void getClock(){}
+        public void detectInterrupt()
+        {
+//            if (interrupt)
+//                do something
+        }
+
+        public void detectPreemption()
+        {
+//            if (preemption)
+//                do something
+        }
+
     
     }
-    
-    //♥♥♥♥ Simulates an interrupt processor ♥♥♥♥♥
-    public class InterruptProcessor{
-        public void signalInterrupt(){}
-        public void addEvent(){}
-        public void getEvent(){}
-    
-    }
-    
-    //♥♥♥♥ Encapsulates the event queue used by interrupt system ♥♥♥♥♥
-    public class EventQueue{
-        public void enQueue(){}
-        public void deQueue(){}
-        
-    
-    }
-}

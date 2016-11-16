@@ -8,12 +8,8 @@ Executes Commands to the OS and the Simulators
  */
 package pkg312project;
 
-/**
- *
- * @author Najia13
- */
-public class CacheMemory {
-    
-    
+public class CacheMemory
+{
+//    int[] cacheMemory = new int[256];
 
 }

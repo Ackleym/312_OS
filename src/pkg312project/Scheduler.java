@@ -11,16 +11,56 @@ package pkg312project;
  */
 public class Scheduler {
     
-    public void insertPCB(){}
-    public void removePCB(){}
-    public void getState(){}
-    public void setState(){}
-    public void getWait(){}
-    public void setWait(){}
-    public void getArrival(){}
-    public void setArrival(){}
-    public void getCPUTime(){}
-    public void setCPUTime(){}
+    public void insertPCB()
+    {
+        when new process
+            create PCB
+    }
+
+    public void removePCB()
+    {
+
+    }
+
+    public void getState()
+    {
+
+    }
+
+    public void setState()
+    {
+
+    }
+
+    public void getWait()
+    {
+
+    }
+
+    public void setWait()
+    {
+
+    }
+
+    public void getArrival()
+    {
+
+    }
+
+    public void setArrival()
+    {
+
+    }
+
+    public void getCPUTime()
+    {
+
+    }
+
+    public void setCPUTime()
+    {
+
+    }
     
     
 }
