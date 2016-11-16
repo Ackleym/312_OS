@@ -5,14 +5,6 @@
  */
 package pkg312project;
 
-/**
- *
- * @author Najia13
- */
-
-
-
-
 
 public class Main {
 
@@ -20,7 +12,12 @@ public class Main {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        // TODO code application logic here
+
+        CommandInterface commInterface = new CommanderInterface();
+        Scheduler scheduler = new Scheduler();
+        CPU cpu = new CPU();
+
+
     }
     
 }
