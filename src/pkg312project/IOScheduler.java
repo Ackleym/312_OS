@@ -3,10 +3,6 @@
  */
 package pkg312project;
 
-
-
-
-
 public class IOScheduler {
 
     public void scheduleIO()

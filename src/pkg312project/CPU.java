@@ -5,10 +5,6 @@
  */
 package pkg312project;
 
-/**
- *
- * @author Najia13
- */
 public class CPU
     {
         public void advanceClock()

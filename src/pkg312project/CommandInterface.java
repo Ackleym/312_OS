@@ -39,18 +39,18 @@ public class CommandInterface {
     public void load(String job)
     {
 //      getProgram(job);
-//      setState();
 //      insertPCB(int id, int priority);
-//      allocateMemory();
+//      setState();
     }
 
     public void reset()
     {
-
+//        Clear everything
     }
 
-    public void promptUser() {
-
+    public void promptUser()
+    {
+//        get command from user
     }
     
 }

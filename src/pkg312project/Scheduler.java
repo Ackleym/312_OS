@@ -10,20 +10,21 @@ public class Scheduler
 
     public class PCB
     {
-        int id;
-        int priority
-        String processState
-        int arrival;
-        int timeElapsed
-        int counter;
-
-        public PCB()
-            this.id = id;
-            this.priority = priority;
-            this.processState = new;
-            this,arrival = null;
-            this.timeElapsed = null;
-            this.counter = null;
+//        int id;
+//        int priority;
+//        int memory;
+//        String processState;
+//        int arrival;
+//        int timeElapsed
+//        int counter;
+//
+//        public PCB()
+//            this.id = id;
+//            this.priority = priority;
+//            this.processState = new;
+//            this,arrival = null;
+//            this.timeElapsed = null;
+//            this.counter = null;
 
     }
 
@@ -51,10 +52,16 @@ public class Scheduler
 //        return PCB.processState;
     }
 
-    public void setState(Process process, String state)
+    public void setState(Process process)
     {
 //        PCB = process.PCB;
-//        process.processState = state;
+//        if (PCB.processState = new)
+//            if (memory > memoryAvailable)
+//                PCB.processState = ready;
+//                wait.enqueue(process);
+//            else
+//                PCB.processState = run;
+//                execution.enqueue(process);
     }
 
     public void getWait(Process process)
