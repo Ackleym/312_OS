@@ -23,22 +23,25 @@ public class CommandInterface {
 
     public void mem()
     {
-
+        //Display memory
     }
 
-    public void exe()
+    public void exe(int cycle)
     {
-
+//        if (ready queue = null)
+//        {
+//            return;
+//        }
+//        else (int i = 0; i < cycle; i++)
+//            Run the simulation
     }
 
-    public void load()
+    public void load(String job)
     {
-//        getProgram();
-
-
-//        setState();
-
-
+//      getProgram(job);
+//      setState();
+//      insertPCB(int id, int priority);
+//      allocateMemory();
     }
 
     public void reset()
