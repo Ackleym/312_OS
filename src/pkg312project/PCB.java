@@ -28,11 +28,11 @@ import javax.swing.JOptionPane;
 
             String test = "value";
 
-            Object[][] data = {
+            Object[][] pcb = {
                     {"Process State", test,
 
                     },
-                    {"Process Number", test,
+                    {"Memory Required", test,
 
                     },
                     {"Program Counter", test,
@@ -52,7 +52,7 @@ import javax.swing.JOptionPane;
                     }
             };
 
-            final JTable PCBtable = new JTable(data, columnNames);
+            final JTable PCBtable = new JTable(pcb, columnNames);
             PCBtable.setPreferredScrollableViewportSize(new Dimension(500, 70));
 
             if (DEBUG) {

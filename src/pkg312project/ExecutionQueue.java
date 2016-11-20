@@ -7,11 +7,53 @@ package pkg312project;
 
 
 public class ExecutionQueue {
-    
-    public void enQueue()
+
+    Node current;
+    Node first;
+    Node last;
+    int numProc;
+
+    public executionQueue()
     {
-//        if (proccessState = running)
-//          place process into exec Queue
+        this.current = null;
+        this.first = null;
+        this.last = null;
+        int numProc = 0;
+    }
+
+    public class Node
+    {
+        Node next;
+        Node prev;
+        Object data;
+
+        public Node(Object[][] pcb)
+        {
+            thid.pcb = pcb;
+            this.left = null;
+            this.right = null;
+        }
+    }
+
+}
+    public void enQueue(Node pcb)
+    {
+        Node newNode = new Node();
+        newNode.data = pcb;
+
+        if current = null;
+        {
+            first = newNode;
+            last = newNode;
+            newNode.next = null;
+        }
+
+        else
+        {
+            current.
+            last = pcb;
+        }
+
     }
 
     public void deQueue()

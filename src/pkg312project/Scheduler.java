@@ -70,7 +70,7 @@ public class Scheduler
         Node prev;
         Object data;
 
-        public Node()
+        public Node(Object[][] pcb)
         {
             thid.data = data;
             this.left = null;
@@ -79,16 +79,33 @@ public class Scheduler
     }
 
     //Insert PCB into the proper queue
-    public void insertPCB(int priority, int id)
+    public void insertPCB(Node pcb)
     {
-//        when new process
-//            PCB.priority = priority;
-//            PCB.id = id;
-//            PCB.processState = New;
-//            PCB.arrival = clock;
-//            PCB.timeElapsed = 0;
-//            PCB.counter = 0;
+        if pcb[0][1] is New
+        {
+            if pcb[1][1] > memory remaining
+            {
+                enqueue.waitQueue();
+                setState(wait);
+            }
 
+            else
+            {
+                setState(ready);
+                readyQueue.enqueue(pcb);
+                memoryAllocated = memoryAllocated + pcb[1][1];
+            }
+        }
+        if pcb[0][1] is Wait
+        {
+            if pcb[1][1] < memory remaining
+            {
+                setState(ready);
+                waitQueue.dequeue(pcb);
+                readyQueue.enqueue(pcb);
+                memoryAllocated = memoryAllocated + pcb[1][1];
+            }
+        }
     }
 
     //Remove the PCB from queue

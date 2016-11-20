@@ -40,7 +40,6 @@ public class CommandInterface {
     {
 //      getProgram(job);
 //      insertPCB(int id, int priority);
-//      setState();
     }
 
     public void reset()
