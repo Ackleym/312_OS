@@ -28,6 +28,57 @@ public class Scheduler
 
     }
 
+    //Ready queue for scheduler
+    public class ReadyQueue {
+
+        Node current;
+        Node first;
+        Node last;
+        int numProc;
+
+        public readyQueue()
+        {
+            this.current = null;
+            this.first = null;
+            this.last = null;
+            int numProc = 0;
+        }
+
+    }
+
+    //Wait queue for scheduler
+    public class WaitQueue
+    {
+        Node current;
+        Node first;
+        Node last;
+        int numProc;
+
+        public waitQueue()
+        {
+            this.current = null;
+            this.first = null;
+            this.last = null;
+            int numProc = 0;
+        }
+    }
+
+    //Node class for the queues
+    public class Node
+    {
+        Node next;
+        Node prev;
+        Object data;
+
+        public Node()
+        {
+            thid.data = data;
+            this.left = null;
+            this.right = null;
+        }
+    }
+
+    //Insert PCB into the proper queue
     public void insertPCB(int priority, int id)
     {
 //        when new process
@@ -40,18 +91,21 @@ public class Scheduler
 
     }
 
+    //Remove the PCB from queue
     public void removePCB()
     {
 //        if (process state exit)
 //            PCB == null;
     }
 
+    //Get current state of a given process
     public void getState(Process process)
     {
 //        PCB = process.PCB;
 //        return PCB.processState;
     }
 
+    //Set state of a given process
     public void setState(Process process)
     {
 //        PCB = process.PCB;
@@ -64,12 +118,14 @@ public class Scheduler
 //                execution.enqueue(process);
     }
 
+    //Get the wait(?) for a given process
     public void getWait(Process process)
     {
 //        PCB = process.PCB;
 //        return PCB.timeElapsed;
     }
 
+    //Set wait(?) for a given process
     public void setWait(Process process, int wait)
     {
 //        PCB = process.PCB;
