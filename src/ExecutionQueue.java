@@ -35,6 +35,26 @@ public class ExecutionQueue {
         int numProc = 0;
     }
 
+    public static class PCB
+    {
+        int memory;
+        int arrival;
+        int timeElapsed;
+        int counter;
+        String state;
+        String priority;
+
+        public PCB()
+        {
+            this.priority = null;
+            this.state = "New";
+            this.arrival = 0;
+            this.timeElapsed = 0;
+            this.counter = 0;
+        }
+
+
+    }
     public Node enQueue(PCB pcb)
     {
         Node newNode = new Node(pcb);
@@ -98,8 +118,6 @@ public class ExecutionQueue {
 //        exec.printPCB(current);
 //
 //    }
-    
-    
-    
-    
+
+
 }
