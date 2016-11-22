@@ -1,0 +1,73 @@
+/*
+ * ♥♥♥♥♥♥♥♥♥
+Encapsulates the queue structure used by Scheduler
+♥♥♥♥♥♥♥♥♥
+ */
+package pkg312project;
+
+
+public class HighPriorityQueue {
+
+    public class Node
+    {
+        Node next;
+        Node prev;
+        PCB pcb;
+
+        public Node(PCB pcb)
+        {
+            this.pcb = pcb;
+            this.next = null;
+            this.prev = null;
+        }
+    }
+
+    static Node current;
+    Node first;
+    Node last;
+    int numProc;
+
+    public void highPriority()
+    {
+        ExecutingQueue.current = null;
+        this.first = null;
+        this.last = null;
+        int numProc = 0;
+    }
+
+    public Node enQueue(PCB pcb)
+    {
+        Node newNode = new Node(pcb);
+        newNode.pcb = pcb;
+
+        if (current == null)
+        {
+            first = newNode;
+            last = newNode;
+            current = newNode;
+            current.next = null;
+        }
+
+        else
+        {
+            current.next = newNode;
+            newNode = current;
+            current.prev = first;
+            last = newNode;
+        }
+
+        return newNode;
+    }
+
+    public void deQueue()
+    {
+        if (first.next != null)
+            first.next.prev = null;
+        first = first.next;
+
+    }
+
+
+
+
+}
